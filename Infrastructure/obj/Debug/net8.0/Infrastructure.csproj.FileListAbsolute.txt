@@ -1,0 +1,16 @@
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+D:\kanban\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+D:\kanban\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+D:\kanban\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+D:\kanban\Infrastructure\bin\Debug\net8.0\Domain.dll
+D:\kanban\Infrastructure\bin\Debug\net8.0\Domain.pdb
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+D:\kanban\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+D:\kanban\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+D:\kanban\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
