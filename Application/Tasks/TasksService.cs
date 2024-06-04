@@ -2,8 +2,6 @@
 {
     using Kanban.Domain.Tasks;
 
-    using System;
-
     public class TasksService
     {
         private ITaskRepository tasksRepository;
