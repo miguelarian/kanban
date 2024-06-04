@@ -42,5 +42,10 @@
         {
             return tasks.FirstOrDefault(t => t.Id == id);
         }
+
+        public void Remove(int id)
+        {
+            tasks.RemoveAll(t => t.Id == id);
+        }
     }
 }

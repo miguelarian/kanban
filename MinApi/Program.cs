@@ -47,4 +47,16 @@ app.MapPost("/tasks", (TasksService tasksService, KTask task) =>
 })
 .WithOpenApi();
 
+app.MapDelete("/tasks/{id}", (TasksService tasksService, int id) =>
+{
+    KTask result = tasksService.GetTask(id);
+    if (result == null)
+    {
+        return Results.NotFound();
+    }
+
+    tasksService.DeleteTask(id);
+    return Results.NoContent();
+});
+
 app.Run();

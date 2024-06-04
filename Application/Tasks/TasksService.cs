@@ -2,6 +2,8 @@
 {
     using Kanban.Domain.Tasks;
 
+    using System;
+
     public class TasksService
     {
         private ITaskRepository tasksRepository;
@@ -24,6 +26,11 @@
         public Task GetTask(int id)
         {
             return tasksRepository.Get(id);
+        }
+
+        public void DeleteTask(int id)
+        {
+            tasksRepository.Remove(id);
         }
     }
 }
