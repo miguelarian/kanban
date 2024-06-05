@@ -7,21 +7,21 @@
         private static List<Task> tasks = new List<Task> {
             new Task
             {
-                Id = 1,
+                Id = new TaskId(Guid.NewGuid()),
                 Title = "Task 1",
                 Description = "Task 1 is not started",
                 Status = Status.Todo
             },
             new Task
             {
-                Id = 2,
+                Id = new TaskId(Guid.NewGuid()),
                 Title = "Task 2",
                 Description = "Task 2 is in progress",
                 Status = Status.InProgress
             },
             new Task
             {
-                Id = 3,
+                Id = new TaskId(Guid.NewGuid()),
                 Title = "Task 3",
                 Description = "Task 3 is done",
                 Status = Status.Done
@@ -38,12 +38,12 @@
             return tasks;
         }
 
-        public Task Get(int id)
+        public Task Get(TaskId id)
         {
             return tasks.FirstOrDefault(t => t.Id == id);
         }
 
-        public void Remove(int id)
+        public void Remove(TaskId id)
         {
             tasks.RemoveAll(t => t.Id == id);
         }

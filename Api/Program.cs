@@ -29,14 +29,15 @@ app.MapGet("/tasks", () =>
 })
 .WithOpenApi();
 
-app.MapGet("/tasks/{id}", (TasksService tasksService, int id) =>
+app.MapGet("/tasks/{id:guid}", (TasksService tasksService, Guid id) =>
 {
-    KTask result = tasksService.GetTask(id);
-    if (result == null)
+    TaskId taskId = new TaskId(id);
+    KTask task = tasksService.GetTask(taskId);
+    if (task == null)
     {
         return Results.NotFound();
     }
-    return Results.Ok(result);
+    return Results.Ok(task);
 })
 .WithOpenApi();
 
@@ -47,15 +48,16 @@ app.MapPost("/tasks", (TasksService tasksService, KTask task) =>
 })
 .WithOpenApi();
 
-app.MapDelete("/tasks/{id}", (TasksService tasksService, int id) =>
+app.MapDelete("/tasks/{id:guid}", (TasksService tasksService, Guid id) =>
 {
-    KTask result = tasksService.GetTask(id);
-    if (result == null)
+    TaskId taskId = new TaskId(id);
+    KTask task = tasksService.GetTask(taskId);
+    if (task == null)
     {
         return Results.NotFound();
     }
 
-    tasksService.DeleteTask(id);
+    tasksService.DeleteTask(task.Id);
     return Results.NoContent();
 });
 

@@ -4,7 +4,7 @@
     {
         void Add(Task task);
         List<Task> Get();
-        Task Get(int id);
-        void Remove(int id);
+        Task Get(TaskId id);
+        void Remove(TaskId id);
     }
 }

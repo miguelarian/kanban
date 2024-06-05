@@ -21,12 +21,12 @@
             return tasksRepository.Get();
         }
 
-        public Task GetTask(int id)
+        public Task GetTask(TaskId id)
         {
             return tasksRepository.Get(id);
         }
 
-        public void DeleteTask(int id)
+        public void DeleteTask(TaskId id)
         {
             tasksRepository.Remove(id);
         }
